@@ -44,6 +44,7 @@ for i in range(len(ID)):
     data += [ID[i] + Surnames[i] + Email[i] + Date[i] + Sites[i]]
 
 
-with open('itog_table.csv', 'w') as csvfile:
+with open('result.csv', 'w') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter='\n')
     csvwriter.writerow(data)
+    
